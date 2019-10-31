@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+
+              android:layout_height="wrap_content"
+                                   android:layout_margin="5dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/imageItemHeader"
+                    android:layout_width="match_parent"
+                       android:layout_height="100dp"
+                       android:src="@drawable/shoe"
+                       android:transitionName="transitionHeader"
+                        android:scaleType="centerCrop"/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+        android:orientation="vertical">
+
+
+            <TextView
+                    android:id="@+id/txtTitleItem"
+                    android:transitionName="transitionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Titulo" android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+            <TextView
+                    android:id="@+id/txtDescItem"
+                    android:transitionName="transitionDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Titulo" android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+
+            <TextView
+                    android:id="@+id/txtPriceItem"
+                    android:transitionName="transitionPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="end"
+                    android:text="Titulo" android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

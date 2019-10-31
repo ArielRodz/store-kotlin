@@ -10,6 +10,7 @@
 <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="230dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:fitsSystemWindows="true">
 
 
@@ -17,14 +18,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
-            app:contenScrim="?attr/colorPrimary"
+            app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
                 <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/shoe"
+                        android:src="@drawable/shop"
                         android:scaleType="centerCrop"/>
+
+        <androidx.appcompat.widget.Toolbar
+
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+
+
+        </androidx.appcompat.widget.Toolbar>
 
 
     </com.google.android.material.appbar.CollapsingToolbarLayout>
@@ -33,5 +44,11 @@
 </com.google.android.material.appbar.AppBarLayout>
 
 
-
+<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcViewLanding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:behavior_overlapTop="30dp"
+></androidx.recyclerview.widget.RecyclerView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
